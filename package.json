@@ -1,0 +1,8 @@
+{
+	"name": "KlipperConfig-VincentVanFlow",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"update": "git reset --hard && git pull --all && echo RESTART > /tmp/printer",
+	}
+}
