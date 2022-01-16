@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "update": "git reset --hard && git pull --all && echo RESTART > /tmp/printer"
+    "klipper:restart": "echo RESTART > /tmp/printer",
+    "firmware:restart": "echo FIRMWARE_RESTART > /tmp/printer",
+    "sks:reset-files": "git reset --hard",
+    "sks:clear-files": "git add --all && git reset --hard",
+    "sks:update": "npm run sks:clear-files && git pull --all && npm run klipper:restart"
   },
   "description": "A collection of macros and configurations for Klipper (3D printer firmware)",
   "author": "Nicholas Summers",
