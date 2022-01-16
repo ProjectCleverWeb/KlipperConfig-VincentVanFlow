@@ -1,8 +1,11 @@
 {
-	"name": "KlipperConfig-VincentVanFlow",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"update": "git reset --hard && git pull --all && echo RESTART > /tmp/printer"
-	}
+  "name": "summers-klipper-suite",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "update": "git reset --hard && git pull --all && echo RESTART > /tmp/printer"
+  },
+  "description": "A collection of macros and configurations for Klipper (3D printer firmware)",
+  "author": "Nicholas Summers",
+  "license": "MIT"
 }
